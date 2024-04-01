@@ -54,15 +54,8 @@ const CreateProduct = () => {
   // Submit Create Product
   const handleFormSubmit = (values, { resetForm }) => {
 
-    const product = {
-      ...values,
-    }
-
-    // dispatch(createProductAction(product, storageUser.token));
-    console.log(values);
-
     dispatch(createProductAction(values));
-    // // Reset Formik
+    // Reset Formik
     resetForm();
   }
 
